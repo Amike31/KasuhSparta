@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>KASUH SPARTA2020</title>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <nav>
+                
+            </nav>
+        </div>
+        <main class="content grid-container">
+            <section class="hero">
+            <img src="alam.jpg" class="alam-img" alt="ABANG GANTENK">
+            <div class="hero-content">
+                <h2>Muhammad Fahmi Alamsyah</h2><br><h5>Abang yang Baik, Gantenk, dan Jago Ngoding, Eaaaa...</h5><br><br>   
+                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, aperiam dolore assumenda velit repellendus recusandae magni consectetur mollitia facere incidunt inventore perspiciatis  debitis doloribus ullam minima culpa voluptatem. Repellendus, option.</p>
+                <a href="" class="action-btn">Tembak... DORRR.!!!!</a>
+            </div>
+            </section>
+        </main>
+    </div>
+    <div class="footer">
+        <footer>
+        <ul>
+            <li><a href="https://www.instagram.com/tararahuuw/">
+                <img src="instagram.png" class="logo" alt="">
+                <p class="logo">Instagram</p>
+            </a></li>
+            <li><a href="https://www.linkedin.com/in/muhammad-fahmi-alamsyah-0319521b4/">
+                <img src="linkedin.png" class="logo" alt="">
+                <p class="logo">LinkedIn</p>
+            </a></li>
+            <a href="https://www.youtube.com/watch?v=eRf6HcHzOKw"><li><img src="YT.png" class="logo" alt="">
+                <p class="logo">Gas IF</p>
+            </a></li>
+        </ul>
+        </footer>
+    </div>    
+</body>
+</html>

@@ -1,0 +1,16 @@
+.mynavbar   {
+  grid-area: sidebar;
+  background: linear-gradient(to right, rgba(200,107,142,1), rgba(218,105,250,1),
+   rgba(110,125,253,1)) ;
+  justify-content: center;
+}
+.wrapper {
+    min-height: 100vh;
+    padding-top: 60px;
+}
+.logo-img {
+    max-height: 35px;
+}
+.logo {
+  height: 30px;
+}

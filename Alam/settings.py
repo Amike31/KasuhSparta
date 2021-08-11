@@ -12,6 +12,8 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 import os
+import django_heroku
+import dj_database_url
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -24,9 +26,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-zoy$iq5ac4)a4xzwdf1sauom-rajqsov^^d47-t&u9t!s9lq-c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -82,6 +84,8 @@ DATABASES = {
     }
 }
 
+DATABASES['default']=dj_database_url.parse('postgres://kuskcfrwmrzwie:5aff42934af863534888753651c139efdc1c69990e621b2b96bfa2309aa7061f@ec2-44-195-209-130.compute-1.amazonaws.com:5432/d14jsdej2309s7',conn_max_age=600)
+
 
 # Password validation
 # https://docs.djangoproject.com/en/3.2/ref/settings/#auth-password-validators
@@ -120,6 +124,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.2/howto/static-files/
 
 STATIC_URL = '/static/'
+
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static'),
 ]
@@ -128,3 +133,5 @@ STATICFILES_DIRS=[
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+django_heroku.settings(locals())

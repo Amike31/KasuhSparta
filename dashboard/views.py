@@ -7,3 +7,5 @@ def index(request):
     
 def lamar(request):
     return render(request,'lamar.html')
+def prank(request):
+    return render(request,'prank.html')

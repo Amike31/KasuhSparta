@@ -1,0 +1,124 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/index.css' %}">
+    <link rel="shortcut icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'img/favicon.ico' %}" type="image/x-icon">
+    <title>KASUH SPARTA2020</title>
+  </head>
+  <body>
+    <audio hidden autoplay loop>
+        <source src="{% static 'audio/song.mp3' %}" type="audio/mpeg">
+        Browsermu tidak mendukung tag audio, upgrade donk!
+    </audio>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top mynavbar">
+        <div class="container">
+            <div>
+                <img src="{% static 'img/sparta.png' %}" class="sparta-img" alt="Logo">
+            </div>
+            <a class="navbar-brand" href="/">
+                <b>KASUH SPARTA2020</b>
+            </a>
+            <button class="navbar-toggler navbar-toggler-right nav-button" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark btn-light" aria-current="page" href="/"><b>Home</b></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-danger btn-warning" href="/prank"><strong>PENCET INI DULU..!!</strong></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container wrapper d-flex flex-column">
+        <!-- Intro -->
+        <div class="row">
+            <div class="col-9 d-flex flex-column">
+                <div class="row">
+                    <h1 style="font-family:cursive; text-align:center; padding-top:0.4cm;">Muhammad Fahmi Alamsyah</h1><br><br><br><br><h4 style="color:rgb(124, 255, 189);";">Abang yang Baik, Gantenk, dan Jago Ngoding, Eaaaa...</h4><br><br><br>
+                    <p class="fs-5" style="font-family:Lucida Sans; text-indent:1cm;">Mungkin ka Alam ga bakal tertarik sama website aye, karena aye baru belajar bikin web 3 hari yang lalu dan begadang 3 hari 3 malam buat bikinnya. <br></p>
+                    <p class="fs-5" style="font-family:Lucida Sans; text-align:center">Tapi aye berharap ka Alam ga bosen bacanya, <strong>HAVE A NICE READ..!!!</strong></p>                
+                </div>
+            </div>
+            <div class="col-3 justify-content-center">
+                <img src="{% static 'img/alam.jpg' %}" class="alam-img" alt="ABANG GANTENK" style="padding-right:10%; max-height: 300px;">
+            </div>
+        </div><hr>
+        <div class="row">
+            <div id="narasi">
+                <h3 style="text-align: center; font-family: cursive; padding-top:0.2cm;"><b>SINGKAT CERITA</b></h3>
+                <p style="text-indent: 1.5cm; text-align:justify;">Awal kita bertemu, di saat pucuk mulai mekar, di saat mentari baru bersinar, yakni ketika aku mulai mencoba memilih jurusan. Saat itulah kubertemu dikau, yang memberi arahan dalam hidupku. Awalnya kita ketemu gegara ka Alam jadi mentor EXPLORE STEI aing. Nah sejak saat itu aye ngeidolain ka Alam karena ka Alam orangnya Humble, Rame, dan suka becanda, eh tapi juga suka ngatain dosen ama bang faiq xixixi.</p>
+                <p style="text-indent: 1.5cm;  text-align:justify;">Setelah itu, aye ngechat kaka via IG, eh DM dong namanya wkwk, itu gegara waktu EXPLORE STEI aye di<i>BAN</i> ama Panitnya, huft :(, eh tapi ka Alam telat bacanya, ya jadinya aye ga ikutan acara terakhir wkwkwk. Nah terus aye mulai <i>"merasa"</i> ka Alam Humble teh waktu ngomongin Warteg Kaki Lima "Hedon" hahahaha. Abis itu entah aye dijadiin badut (bahan gabut) ato emang ka Alam orangnya asik, kita keterusan chat, bahas-bahas kampus, gimana rasanya kuliah oflen dan sebagainya. Eh tapi, setelah mengenal lebih dalam melalui SPARTA ka Alam teh orangnya emang HUMBLE parah, doyan deh ama orang yang asik diajak ngomong wkwk. Trus ka Alam emang panutan banget dah, mana imba, suka magang nyari cuan, udah intern dimana-mana juga <b>:</b>D.</p>
+            </div>
+        </div>
+
+
+        <div class="row d-flex flex-row justify-content-center btn btn-warning">
+            <a href="/lamar" class="action-btn text-dark"><h3>Tembak... DORRR.!!!!</h3></a>
+        </div>
+        <div>
+
+        <!-- footer -->
+        <!-- </div>
+        <div class="row" id="footer">
+            <div class=" d-flex justify-content-end">
+                <div class="col-3" style="text-align: center; padding-top:0.2cm">
+                    <div class="row d-flex justify-content-center">
+                        <h5>Follow Me on: </h5>
+                    </div>
+                    <div class="row d-flex justify-content-center">
+                        (LinkedIn ny blom kaka ACC :)
+                    </div>
+                </div>
+                <div class="col-1"><a href="https://www.instagram.com/rahmatrafid/">
+                    <img src="{% static 'img/instagram.png' %}" class="logo" alt="">                    
+                    </a><h6>Instagram</h6>
+                </div>
+
+                <div class="col-1"><a href="https://www.linkedin.com/in/rahmat-rafid-akbar-2296b8198/">
+                    <img src="{% static 'img/linkedin.png' %}" class="logo" alt="">
+                    </a><h6>LinkedIn</h6>
+                </div>
+            </div> -->
+            
+
+
+        </div>
+    </div>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  </body>
+
+</html>
+
+<!-- <div class="container wrapper d-flex flex-column justify-content-center">
+    <div class="row">
+        <div class="col-6 d-flex flex-column">
+            <h1>Tes Mandiri</h1>
+            <h1>Risiko COVID-19</h1>
+            <div>Muncul gejala-gelaja covid tetapi</div>
+            <div>tidak yakin dan kurang uang untuk tes swab?</div>
+            <br>
+            <a class="btn btn-primary" href="/MulaiTes">Tes Sekarang!</a>
+        </div>
+        <div class="col-6">
+            <img src="{% static 'img/Homepage.png' %}" class="img-fluid" alt="Apa?">
+        </div>
+    </div>
+</div> -->

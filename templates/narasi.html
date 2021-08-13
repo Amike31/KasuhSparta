@@ -16,7 +16,7 @@
     <title>KASUH SPARTA2020</title>
   </head>
   <body>
-    <audio id="song" hidden autoplay loop>
+    <audio id="song" hidden autoplay>
         <source src="{% static 'audio/song1_fix.mp3' %}" type="audio/mpeg">
         Browsermu tidak mendukung tag audio, upgrade donk!
     </audio>
@@ -36,7 +36,7 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
                     <li class="nav-item">
-                        <button onclick="setHalfVolume()" type="button">Kecilin suaranya</button>
+                        <button onclick="setHalfVolume()" type="button" style="height:40px;">Kecilin suaranya</button>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active text-dark btn-light" aria-current="page" href="/"><b>Home</b></a>
@@ -54,15 +54,19 @@
         <div class="row">
             <div class="col-9 d-flex flex-column">
                 <div class="row">
-                    <h1 style="font-family:cursive; text-align:center; padding-top:0.4cm;">Muhammad Fahmi Alamsyah</h1><br><br><br><br><h4 style="color:rgb(124, 255, 189);";">Abang yang Baik, Gantenk, dan Jago Ngoding, Eaaaa...</h4><br><br><br>
+                    <h1 style="font-family:cursive; text-align:center; padding-top:0.4cm;">Muhammad Fahmi Alamsyah</h1><br><br><br><br><h4 style="color:rgb(133, 250, 230);font-size:23px;text-indent:1cm;">~  Abang yang Baik, Gantenk, dan Jago Ngoding, Eaaaa...  ~</h4><br><br>
                     <p class="fs-5" style="font-family:Lucida Sans; text-indent:1cm;">Mungkin ka Alam ga bakal tertarik sama website aye, karena aye baru belajar bikin web seminggu yang lalu dan begadang 7 hari 7 malam buat bikinnya. {karena aye keos ngepanit :( } <br></p>
                     <p class="fs-5" style="font-family:Lucida Sans; text-align:center">Tapi aye berharap ka Alam ga bosen bacanya, <strong>HAVE A NICE READ..!!!</strong></p>                
                 </div>
+                <center style="padding-left: 15%;">
+                    <h5 style="color:white;"><i>Bacanya pelan-pelan dong ikutin iramanya :D</i></h5>
+                </center>
             </div>
             <div class="col-3 justify-content-center">
-                <img src="{% static 'img/alam.jpg' %}" class="alam-img" alt="ABANG GANTENK" style="padding-right:10%; max-height: 300px;">
+                <img src="{% static 'img/alam.jpg' %}" class="alam-img" alt="ABANG GANTENK" style="padding-right:10%; padding-top:2px; max-height: 320px;">
             </div>
-        </div><hr>
+        </div>
+        <hr>
         <div class="row">
             <div id="narasi">
                 <h3 style="text-align: center; font-family: cursive; padding-top:0.2cm;"><b>SINGKAT CERITA</b></h3>
@@ -92,19 +96,3 @@
   </body>
 
 </html>
-
-<!-- <div class="container wrapper d-flex flex-column justify-content-center">
-    <div class="row">
-        <div class="col-6 d-flex flex-column">
-            <h1>Tes Mandiri</h1>
-            <h1>Risiko COVID-19</h1>
-            <div>Muncul gejala-gelaja covid tetapi</div>
-            <div>tidak yakin dan kurang uang untuk tes swab?</div>
-            <br>
-            <a class="btn btn-primary" href="/MulaiTes">Tes Sekarang!</a>
-        </div>
-        <div class="col-6">
-            <img src="{% static 'img/Homepage.png' %}" class="img-fluid" alt="Apa?">
-        </div>
-    </div>
-</div> -->

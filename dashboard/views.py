@@ -9,3 +9,5 @@ def lamar(request):
     return render(request,'lamar.html')
 def prank(request):
     return render(request,'prank.html')
+def narasi(request):
+    return render(request,'narasi.html')
